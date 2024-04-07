@@ -54,7 +54,7 @@ const Section = ({ status, tasks, setTasks, todos, inProgress, closed, rework })
             let obj = {
                 status
             }
-            axios.patch(`http://localhost:5050/tasks/update/${id}`, obj).then((res) => {
+            axios.patch(`https://task-builder-app.onrender.com/tasks/update/${id}`, obj).then((res) => {
                 
                 console.log(res)
             }).catch((err) => {

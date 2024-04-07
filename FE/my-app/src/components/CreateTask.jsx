@@ -19,7 +19,7 @@ const CreateTask = ({ tasks, setTasks }) => {
             localStorage.setItem("tasks", JSON.stringify(list))
             return list
         })
-        axios.post("http://localhost:5050/tasks/add", task).then((res) => {
+        axios.post("https://task-builder-app.onrender.com/tasks/add", task).then((res) => {
             toast.success("Task Created!!😀")
             setTask({
                 id: "",
@@ -34,7 +34,7 @@ const CreateTask = ({ tasks, setTasks }) => {
     }
     const handleDownloadPdf = async () => {
         try {
-            const response = await axios.get("http://localhost:5050/pdf/download", {
+            const response = await axios.get("https://task-builder-app.onrender.com/pdf/download", {
                 responseType: 'blob'
             });
 

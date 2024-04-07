@@ -14,8 +14,8 @@ const Task = ({ task, tasks, setTasks }) => {
 
     const handleremove = (id) => {
        
-        axios.delete(`http://localhost:5050/tasks/delete/${id}`).then((res1) => {
-            axios.get("http://localhost:5050/tasks/get").then((res) => {
+        axios.delete(`https://task-builder-app.onrender.com/tasks/delete/${id}`).then((res1) => {
+            axios.get("https://task-builder-app.onrender.com/tasks/get").then((res) => {
                 setTasks(res.data)
 
             }).catch((err) => {

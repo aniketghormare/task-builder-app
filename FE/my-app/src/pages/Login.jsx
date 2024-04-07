@@ -15,7 +15,7 @@ const Login = () => {
             email,
             password
         }
-        axios.post("http://localhost:5050/auth/login", obj).then((res) => {
+        axios.post("https://task-builder-app.onrender.com/auth/login", obj).then((res) => {
              console.log(res)
              if(res.status==200){
                 toast.success("LoginIn Success!!")

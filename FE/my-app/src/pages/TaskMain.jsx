@@ -12,7 +12,7 @@ function TaskMain() {
   const [tasks, setTasks] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:5050/tasks/get").then((res) => {
+    axios.get("https://task-builder-app.onrender.com/tasks/get").then((res) => {
 
       setTasks(res.data)
     }).catch((err) => {

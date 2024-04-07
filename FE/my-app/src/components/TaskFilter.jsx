@@ -8,7 +8,7 @@ const TaskFilter = ({ setTasks }) => {
     const handleFilter = async () => {
 
         try {
-            const response = await axios.get(`http://localhost:5050/tasks/filter`, {
+            const response = await axios.get(`https://task-builder-app.onrender.com/tasks/filter`, {
                 params: {
                     startDate,
                     endDate
@@ -21,7 +21,7 @@ const TaskFilter = ({ setTasks }) => {
         }
     };
     const handleReset = () => {
-        axios.get("http://localhost:5050/tasks/get").then((res) => {
+        axios.get("https://task-builder-app.onrender.com/tasks/get").then((res) => {
 
             setTasks(res.data)
             setStartDate("")

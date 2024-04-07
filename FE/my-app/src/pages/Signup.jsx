@@ -17,7 +17,7 @@ const Signup = () => {
             password,
             name
         }
-        axios.post("http://localhost:5050/auth/signup", obj).then((res) => {
+        axios.post("https://task-builder-app.onrender.com/auth/signup", obj).then((res) => {
 
             if (res.status == 200) {
                 toast.success("SignUp Success!!")
