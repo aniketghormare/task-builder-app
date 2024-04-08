@@ -68,7 +68,7 @@ Taskrouter.get('/filter', async (req, res) => {
         }
        }
        const data=await TaskModel.find(query)
-       console.log("data",data)
+       
        res.status(200).send(data)
     } catch (error) {
         console.error(error);
