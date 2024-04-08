@@ -21,7 +21,7 @@ my-app/
 [project presentation](https://drive.google.com/file/d/1Nr02_zo7O7gU37guSGlcKBr_1rn78eZe/view?usp=drive_link)
 
 ## Video Walkthrough of the codebase
-[project presentation](https://drive.google.com/file/d/1Nr02_zo7O7gU37guSGlcKBr_1rn78eZe/view?usp=drive_link)
+[project presentation](https://drive.google.com/file/d/1YNAzJqIObQBFLpOO3f64xwmiPTdKOKYY/view?usp=drive_link)
 
 ## Features
 List out the key features of your application.
