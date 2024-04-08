@@ -7,7 +7,7 @@ This project aims to provide a comprehensive solution for task management using 
 Frontend | Backend | Fullstack
 
 ## Deplolyed App
-Frontend: https://silver-beijinho-40315e.netlify.app/
+Frontend: https://heroic-melba-3dbc17.netlify.app/
 Backend: https://task-builder-app.onrender.com/
 github: https://github.com/aniketghormare/task-builder-app
 
