@@ -1,4 +1,4 @@
-# Project Title
+# Project Title- Task-Builder-App
 
 ## Introduction
 This project aims to provide a comprehensive solution for task management using React.js for the frontend, Node.js for the backend, and MySQL as the preferred database. The application allows users to efficiently create, track, and manage tasks with various statuses.
