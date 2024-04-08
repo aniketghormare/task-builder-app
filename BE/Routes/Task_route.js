@@ -55,21 +55,22 @@ Taskrouter.delete('/delete/:id', async (req, res) => {
 });
 
 Taskrouter.get('/filter', async (req, res) => {
-    
-
     try {
-      
-       let query={}
+        let query = {};
 
-       if(req.query.startDate && req.query.endDate){
-        query.date={
-            $gte:new Date(req.query.startDate),
-            $lte:new Date(req.query.endDate),
+        if (req.query.startDate && req.query.endDate) {
+           
+            const endDate = new Date(req.query.endDate);
+            endDate.setHours(23, 59, 59, 999);
+
+            query.date = {
+                $gte: new Date(req.query.startDate),
+                $lte: endDate, // Use the end of the day for endDate
+            };
         }
-       }
-       const data=await TaskModel.find(query)
-       
-       res.status(200).send(data)
+
+        const data = await TaskModel.find(query);
+        res.status(200).send(data);
     } catch (error) {
         console.error(error);
         res.status(500).send('Server Error');
