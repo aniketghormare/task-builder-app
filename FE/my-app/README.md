@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Project Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+This project aims to provide a comprehensive solution for task management using React.js for the frontend, Node.js for the backend, and MySQL as the preferred database. The application allows users to efficiently create, track, and manage tasks with various statuses.
 
-## Available Scripts
+## Project Type
+Frontend | Backend | Fullstack
 
-In the project directory, you can run:
+## Deplolyed App
+Frontend: https://silver-beijinho-40315e.netlify.app/
+Backend: https://task-builder-app.onrender.com/
+github: https://github.com/aniketghormare/task-builder-app
 
-### `npm start`
+## Directory Structure
+my-app/
+├─ backend/
+├─ frontend/
+│  ├─ ...
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Video Walkthrough of the project
+[project presentation](https://drive.google.com/file/d/1Nr02_zo7O7gU37guSGlcKBr_1rn78eZe/view?usp=drive_link)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Video Walkthrough of the codebase
+[project presentation](https://drive.google.com/file/d/1Nr02_zo7O7gU37guSGlcKBr_1rn78eZe/view?usp=drive_link)
 
-### `npm test`
+## Features
+List out the key features of your application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Login/Signup Auth
+- Drag/Drop functionality
+- Filtaration
+- Pdf Creation/download
 
-### `npm run build`
+## design decisions or assumptions
+List your design desissions & assumptions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation & Getting started
+Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install my-project
+cd my-project
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
+Provide instructions and examples on how to use your project.
 
-### `npm run eject`
+```bash
+# Example
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Include screenshots as necessary.
+[](https://drive.google.com/file/d/1teLJtI7mxHcJfXGLxVi3-4Uwv-vWSf8P/view?usp=sharing)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[](https://drive.google.com/file/d/1f2E4zPmuTwkS8ucTvJeOhBSahcwp2FAZ/view?usp=sharing)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[](https://drive.google.com/file/d/1dzH2LyeNDqyw0b7cAu2tzN0u8eegbOkt/view?usp=sharing)
+## Credentials
+Provide user credentials for autheticated pages
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## APIs Used
+If your application relies on external APIs, document them and include any necessary links or references.
 
-## Learn More
+## API Endpoints
+In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
+GET /tasks/get - retrieve all items
+POST /tasks/add - create a new item
+PATCH /tasks/update/:id - update a item
+DELETE /tasks/delete/:id - delete a item
+GET /tasks/filter - filter items based on date.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+POST /auth/signup - post the user details.
+POST /auth/login - login.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+GET /pdf/download - download pdf.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technology Stack
+List and provide a brief overview of the technologies used in the project.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Node.js
+- Express.js
+- MongoDB
+- react-dnd
+- Other libraries/modules
