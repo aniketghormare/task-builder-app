@@ -45,6 +45,8 @@ npm start
 
 ## Usage
 Provide instructions and examples on how to use your project.
+FE -  npm run start
+BE -  npm run server
 
 ```bash
 # Example
